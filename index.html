@@ -15,25 +15,49 @@
     border: 1px solid black;
   }
   
+ 	.lid {
+    border-radius: 50%;
+    background-color: hsl(49, 100%, 53%);
+    height: 20px;
+  	width: 150px;
+    position: fixed;
+    border: 1px solid black;
+    transform: translate(0, -180px);
+  }
   .bustelo {
     width: 150px;
     height: 150px;
     background-color: hsl(49, 100%, 53%);
+    position: absolute;
+    transform: translate(0, 10px);
+    border: 1px solid black;
   }
   
   .red {
     background-color: red;
-    height: 33%;
-    width: 100px;
-    transform: translate();
+    height: 30%;
+    width: 100%;
+    transform: translate(0,180%);
+  }
+  
+  .brand {
+    font-family: "Copperplate", Fantasy, serif;
+    font-size: 30px;
+    
   }
   
 </style>
 
 
 <div class="frame">
-  <div class="bustelo">
-    <div class="brand">Cafe Bustelo</div>
-    <div class="red"></div>
+  <div class="Kettle">
   </div>
+  
+<!-- BUSTELLO -->
+  <div class="bustelo">
+    <div class="brand">Cafe
+      <p>Bustello</p>
+    </div>
+    <div class="red"></div>
+    <div class="lid"></div>
 </div>
