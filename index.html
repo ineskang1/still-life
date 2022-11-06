@@ -18,9 +18,13 @@
     padding-left: 50px;
   }
   
+  .second-can {
+    padding-left: 250px;
+  }
+  
  	.yellowlid {
     border-radius: 50%;
-    background-color: hsl(49, 100%, 53%);
+    background-color: yellow;
     height: 20px;
   	width: 150px;
     position: fixed;
@@ -29,7 +33,7 @@
   .body {
     width: 150px;
     height: 150px;
-    background-color: hsl(49, 100%, 53%);
+    background-color: yellow;
     position: absolute;
     transform: translate(0, 10px);
   }
@@ -39,14 +43,22 @@
     height: 30%;
     width: 100%;
     position: absolute;
-    top: 105px;
+    top: 140px;
   }
   
-  .brand {
+  .brand1 {
     font-family: "Copperplate", Fantasy, serif;
     font-size: 50px;
     padding-top: 30px;
     line-height: 30px;
+  }
+
+  .brand2 {
+    font-family: "Copperplate", Fantasy, serif;
+    font-size: 50px;
+    padding-top: 30px;
+    line-height: 30px;
+    text-align: right;
   }
   
  	.redbottom {
@@ -55,29 +67,118 @@
     height: 20px;
   	width: 150px;
     position: absolute;
-    top: 505px;
+    top: 540px;
+  }
+  
+  .trapezoid {
+    z-index: 1;
+		height: 0;
+  	width: 150px;
+  	border-bottom: 145px solid orange;
+  	border-left: 40px solid transparent;
+  	border-right: 40px solid transparent;
+    position: absolute;
+    transform: rotateZ(180deg) translateX(-110px);
+  }
+  
+  .kettle-top {
+    z-index: 2;
+    border-radius: 50%;
+    background-color: orange;
+    height: 80px;
+  	width: 230px;
+    position: absolute;
+    left: 292px;
+    top: 312px;
+  }
+  
+  .black-top {
+    z-index: 2;
+		height: 0;
+  	width: 20px;
+  	border-bottom: 30px solid black;
+  	border-left: 6px solid transparent;
+  	border-right: 6px solid transparent;
+    position: absolute;
+    transform: rotateZ(180deg) translateX(-205px) translateY(68px);
+  }
+  
+  .orange-square {
+    z-index: 3;
+    height: 180px;
+    width: 140px;
+    background-color: orange;
+    position: relative;
+    left: 155px;
+  }
+  
+  .kettle-bottom {
+    z-index: 1;
+		height: 0;
+  	width: 140px;
+  	border-bottom: 100px solid grey;
+  	border-left: 30px solid transparent;
+  	border-right: 30px solid transparent;
+    position: relative;
+    left: 125px;
+  }
+  
+  .handle {
+    z-index: 1;
+    font-family: sans-serif;
+    font-weight: bold;
+		font-size: 80px;
+    transform: scale(-1) scaleX(-1) translate(80px, 300px);
+  }
+  
+  .triangle {
+  	width: 0;
+		height: 0;
+		border-top: 0px solid transparent;
+		border-left: 50px solid orange;
+		border-bottom: 50px solid transparent;
+    position: relative;
+    left: 328px;
+    bottom: 380px;
+}
+    
+    
   }
   
 </style>
 
 
 <div class="frame">
-  
+
 <div class="first-can">
   <div class="yellowlid"></div>
   <div class="redbottom"></div>
   <div class="body">
-		<div class="brand">AFE <br> USTE
+		<div class="brand1">AFE <br> USTE
 		</div>
 		<div class="red"></div>
 	</div>
 </div>
+
+<div class="second-can">
+  <div class="yellowlid"></div>
+  <div class="redbottom"></div>
+  <div class="body">
+		<div class="brand2">CA <br> BUS
+		</div>
+		<div class="red"></div>
+	</div>
+</div>
+
+<div class="Kettle">
+  <div class="trapezoid"></div>
+  <div class="kettle-top"></div>
+  <div class="black-top"></div>
+  <div class="orange-square"></div>
+  <div class="kettle-bottom"></div>
+  <div class="handle">L</div>
+  <div class="triangle"></div>
+</div>
   
-
-  
-<!-- BUSTELLO -->
-
-    
-      <div class="Kettle">
-
+<div class="">
 </div>
