@@ -4,60 +4,76 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid grey;
     margin: 0px;
   }
   
   .frame {
-/*     background-color: red; */
     height: 500px;
     width: 500px;
     border: 1px solid black;
   }
   
- 	.lid {
+  .first-can {
+    padding-top: 150px;
+    padding-left: 50px;
+  }
+  
+ 	.yellowlid {
     border-radius: 50%;
     background-color: hsl(49, 100%, 53%);
     height: 20px;
   	width: 150px;
     position: fixed;
-    border: 1px solid black;
-    transform: translate(0, -180px);
   }
+  
   .bustelo {
     width: 150px;
     height: 150px;
     background-color: hsl(49, 100%, 53%);
     position: absolute;
     transform: translate(0, 10px);
-    border: 1px solid black;
   }
   
   .red {
     background-color: red;
-    height: 30%;
+    height: 40%;
     width: 100%;
-    transform: translate(0,180%);
   }
   
   .brand {
     font-family: "Copperplate", Fantasy, serif;
     font-size: 30px;
-    
+  }
+  
+ 	.redbottom {
+    border-radius: 50%;
+    background-color: red;
+    height: 20px;
+  	width: 150px;
+    position: absolute;
+    top: 180px;
   }
   
 </style>
 
 
 <div class="frame">
-  <div class="Kettle">
+  
+<div class="first-can">
+  <div class="yellowlid">
+  <div class="redbottom"></div>
+  <div class="bustelo">
+  <div class="brand">Cafe
+    <p>Bustello</p>
   </div>
+  <div class="red"></div>
+</div>
+	
+</div>
   
 <!-- BUSTELLO -->
-  <div class="bustelo">
-    <div class="brand">Cafe
-      <p>Bustello</p>
-    </div>
-    <div class="red"></div>
-    <div class="lid"></div>
+
+    
+      <div class="Kettle">
+
 </div>
